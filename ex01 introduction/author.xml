@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<author xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="book2.xsd">
+	<firstname>Brett</firstname>
+	<lastname>McLaughlin</lastname>
+</author>

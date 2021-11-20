@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="isbn" type="xs:string"/>
+	<xs:element name="title" type="xs:string"/>
+	<xs:element name="firstname" type="xs:string"/>
+	<xs:element name="lastname" type="xs:string"/>
+	<xs:element name="publisher" type="xs:string"/>
+	<xs:element name="edition" type="xs:string"/>
+	<xs:attribute name="added_at" type="xs:string"/>
+	<xs:element name="author">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="firstname"/>
+				<xs:element ref="lastname"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="book">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="isbn"/>
+				<xs:element ref="title"/>
+				<xs:element ref="author"/>
+				<xs:element ref="publisher"/>
+				<xs:element ref="edition"/>
+			</xs:sequence>
+			<xs:attribute ref="added_at"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

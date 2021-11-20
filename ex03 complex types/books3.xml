@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="books3.xsd">
+	<book>
+		<title>Germinal</title>
+		<author>
+			<name>Emile Zola</name>
+			<born>1840</born>			
+		</author>
+	</book>
+	<book>
+		<title>Vis et n'oublie pas</title>
+		<author>
+			<name>Valentin Raspoutine</name>
+			<born>1937</born>
+		</author>
+	</book>
+</books>

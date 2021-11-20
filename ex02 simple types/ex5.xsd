@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Constraining the value space, not the lexical space -->
+
+<xs:simpleType name="myByte">
+		<xs:restriction base="xs:byte">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="5"/>
+			<xs:enumeration value="15"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+<!-- Constraining the lexical space -->
+<!--
+	<xs:simpleType name="myByte">
+		<xs:restriction base="xs:byte">
+			<xs:pattern value="1"/>
+			<xs:pattern value="5"/>
+			<xs:pattern value="15"/>
+		</xs:restriction>
+	</xs:simpleType>
+-->
+	<xs:element name="byte" type="myByte"/>	
+</xs:schema>

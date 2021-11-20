@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="book2.xsd"
+    added_at="2011-07-15T15:02:00">
+	<title>Java &amp; XML</title>
+</book>

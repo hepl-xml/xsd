@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="book">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="isbn">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="\d{9}[\dX]"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="title" type="xs:token"/>
+				<xs:element name="author">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="firstname" type="xs:token"/>
+							<xs:element name="lastname" type="xs:token"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="publisher" type="xs:token"/>
+				<xs:element name="edition" type="xs:positiveInteger"/>
+			</xs:sequence>
+			<xs:attribute name="added_at" type="xs:dateTime"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

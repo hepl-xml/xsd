@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="books1.xsd">
+	<book added_at="2011-07-15T15:02:00">
+		<isbn>0596001975</isbn>
+		<title>Java &amp; XML</title>
+		<author>
+			<firstname>Brett</firstname>
+			<lastname>McLaughlin</lastname>
+		</author>
+	</book>
+	<book added_at="2011-07-16T14:00:00">
+		<isbn>0596002920</isbn>
+		<title>XML in a Nutshell</title>
+		<author>
+			<name>Elliotte Rusty Harold</name>
+		</author>
+		<author>
+			<firstname>Scott</firstname>
+			<lastname>Means</lastname>
+		</author>
+	</book>
+</books>

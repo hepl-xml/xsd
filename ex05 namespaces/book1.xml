@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:book
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://khi.be/ns/book book1.xsd"
+	xmlns:b="http://khi.be/ns/book"
+	added_at="2011-07-15T15:02:00">
+	<b:isbn>0596001975</b:isbn>
+	<b:title>Java &amp; XML</b:title>
+	<b:author>
+		<b:firstname>Brett</b:firstname>
+		<b:lastname>McLaughlin</b:lastname>
+	</b:author>
+	<b:publisher>O'Reilly</b:publisher>
+	<b:edition>2</b:edition>
+</b:book>

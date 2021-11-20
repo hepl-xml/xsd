@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="isbn">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d-\d{3}-\d{5}-\w"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="telephone">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{2,3}/\d{2,3}\.\d\d\.\d\d"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="email">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[^\s@]+@[^\s@]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="isbn" type="isbn"/>
+	<xs:element name="telephone" type="telephone"/>
+	<xs:element name="email" type="email"/>
+	<!-- NOT RELEVANT HERE -->
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="isbn"/>
+				<xs:element ref="telephone"/>
+				<xs:element ref="telephone"/>
+				<xs:element ref="email"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

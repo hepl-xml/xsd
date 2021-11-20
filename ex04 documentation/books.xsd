@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="author">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">
+				Describes the author of a book
+			</xs:documentation>
+			<xs:documentation xml:lang="fr">
+				Désigne l'auteur d'un livre
+			</xs:documentation>
+			<xs:appinfo xmlns:dc="http://purl.org/dc/elements/1.1/">
+				<dc:creator>Ludovic Kuty</dc:creator>
+				<dc:date>2005-10-30</dc:date>
+				<dc:subject>author</dc:subject>
+				<dc:description>Describes the author of a book</dc:description>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:token"/>
+				<xs:element name="born" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

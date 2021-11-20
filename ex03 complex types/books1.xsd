@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="isbn">
+		<xs:restriction base="xs:token">
+			<xs:pattern value="\d{9}[\dX]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="author">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="name" type="xs:token"/>
+				<xs:sequence>
+					<xs:element name="firstname" type="xs:token"/>
+					<xs:element name="lastname" type="xs:token"/>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="book">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="isbn" type="isbn"/>
+				<xs:element name="title" type="xs:token"/>
+				<xs:element ref="author" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="added_at" type="xs:dateTime" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="books">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="book" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

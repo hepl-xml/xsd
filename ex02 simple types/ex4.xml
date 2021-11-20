@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ex4.xsd">
+    <isbn>0-596-00197-5</isbn>
+    <telephone>04/330.75.75</telephone>
+    <telephone>085/11.11.11</telephone>
+    <email>ludovic.kuty@hepl.be</email>
+</root>
